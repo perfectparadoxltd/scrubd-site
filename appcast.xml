@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Scrubd</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Wed, 17 Jun 2026 19:53:55 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://scrubd.perfectparadox.co.uk/Scrubd-0.1.0.zip" length="3155754" type="application/octet-stream" sparkle:edSignature="CmBse2A6W0JITTUtdIoBIEZocd5/ZbpryjYNZ9p6wgiIPqPdcNw/rW4lTplSvsCM7LIvgQBKrRH+EJihuRQEAA=="/>
+        </item>
+    </channel>
+</rss>

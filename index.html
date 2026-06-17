@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scrubd — Clean your documents before you send them</title>
+<meta name="description" content="Scrubd strips hidden metadata from your files before you share them: images, PDFs, Office documents and video — GPS, author names, edit history, comments. One drag-and-drop, see before you clean, 100% on your Mac. One-time $14.99, zero telemetry. macOS 14+.">
+<link rel="canonical" href="https://scrubd.perfectparadox.co.uk/">
+<meta property="og:title" content="Scrubd — Clean your documents before you send them">
+<meta property="og:description" content="Hidden metadata reveals who you are, where you were, who edited what. Scrubd strips it from images, PDFs, Office files and video in one drag-and-drop. On-device. One-time $14.99, zero telemetry.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://scrubd.perfectparadox.co.uk/">
+<meta property="og:site_name" content="Perfect Paradox">
+<meta property="og:image" content="https://scrubd.perfectparadox.co.uk/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scrubd — Clean your documents before you send them">
+<meta name="twitter:description" content="Strip hidden metadata from images, PDFs, Office files and video before you share. See exactly what's inside, then clean it. On-device. One-time $14.99, zero telemetry.">
+<meta name="twitter:image" content="https://scrubd.perfectparadox.co.uk/og.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Scrubd","applicationCategory":"UtilitiesApplication","operatingSystem":"macOS 14.0 or later","softwareVersion":"0.1.0","url":"https://scrubd.perfectparadox.co.uk/","description":"On-device metadata cleaner for Mac: drag in images, PDFs, Office documents (.docx/.xlsx/.pptx) and video, see exactly what hidden metadata is inside — GPS, author, edit history, comments, software — and strip it before you send. Intent profiles for web, clients and lawyers. No upload, no account, no telemetry.","featureList":["Cleans images, PDFs, Office documents and video","Audit view: see hidden metadata before and after","Intent profiles: Publish to web, Send to client, Strip everything","Scrubs Office author, tracked changes, comments and company info in batch","100% on-device — nothing leaves your Mac","Keeps your originals, writes clean copies","Notarized by Apple"],"offers":{"@type":"Offer","price":"14.99","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Perfect Paradox Ltd"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#0a0a0b; --ink:#f4f1ea; --indigo:#14b8a6; --indigo2:#5eead4; --muted:#8c8a86; --line:rgba(244,241,234,.14); }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Archivo',sans-serif;overflow-x:hidden}
+/* hero background video (Higgsfield · teal abstracto) con gradiente de fallback */
+.herobg{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;object-fit:cover;background:radial-gradient(130% 100% at 72% 12%, rgba(94,234,212,.28), transparent 55%),radial-gradient(120% 120% at 15% 90%, rgba(20,184,166,.32), transparent 60%),linear-gradient(160deg,#08130f 0%,#0a0a0b 55%,#07100d 100%)}
+.bgtint{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(120% 90% at 70% 15%, rgba(20,184,166,.18), transparent 60%), rgba(10,10,11,.42)}
+.scanfixed{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.4;background:repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.22) 2px 3px)}
+.page{position:relative;z-index:2}
+.rail{position:fixed;top:0;bottom:0;width:40px;display:flex;align-items:center;justify-content:center;z-index:40;pointer-events:none}
+.rail.l{left:0}.rail.r{right:0}
+.rail span{writing-mode:vertical-rl;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--ink);opacity:.7}
+.rail.l span{transform:rotate(180deg)}
+nav{position:fixed;top:0;left:0;right:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;z-index:50;mix-blend-mode:difference}
+nav .brand{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.3em;text-transform:uppercase}
+nav .links{display:flex;gap:28px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+nav a{color:var(--ink);text-decoration:none;opacity:.85}
+.hero{position:relative;height:100vh;min-height:680px;display:flex;flex-direction:column;justify-content:flex-end;padding:0 56px 64px}
+.hero .veil{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg, transparent 35%, rgba(10,10,11,.82) 100%)}
+.hero .inner{position:relative;z-index:2;max-width:1100px}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--indigo2);margin-bottom:18px}
+.hero h1{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(80px,18vw,260px);line-height:.82;letter-spacing:-.01em;text-shadow:0 6px 60px rgba(0,0,0,.5)}
+.hero h1 .stroke{-webkit-text-stroke:2px var(--ink);color:transparent}
+.hero .sub{margin-top:22px;max-width:600px;font-size:19px;line-height:1.5;color:#e7e3db}
+.cta-row{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;align-items:center}
+.btn{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.18em;font-size:13px;padding:16px 30px;border:1px solid var(--ink);color:var(--ink);background:transparent;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:.18s;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn.primary{background:var(--indigo);border-color:var(--indigo);color:#04211c}
+.btn.primary:hover{background:var(--indigo2);border-color:var(--indigo2);color:#04211c}
+.price-tag{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;color:#cfcbc3}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:14px 0;background:rgba(13,13,14,.92)}
+.marquee div{display:inline-block;animation:scroll 26s linear infinite;font-family:'Anton',sans-serif;text-transform:uppercase;font-size:22px;letter-spacing:.05em;color:var(--muted)}
+.marquee b{color:var(--indigo2)}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.feat{padding:120px 56px;background:rgba(10,10,11,.9)}
+.feat-inner{max-width:1300px;margin:0 auto}
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.35em;text-transform:uppercase;color:var(--indigo2);margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.cell{background:rgba(10,10,11,.75);padding:48px 40px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}
+.cell .n{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.2em}
+.cell h3{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:34px;line-height:.95;margin:18px 0 14px}
+.cell p{color:#cbc7bf;font-size:16px;line-height:1.55}
+.price{padding:140px 56px;text-align:center;background:rgba(10,10,11,.78)}
+.price .big{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(60px,11vw,150px);line-height:.85}
+.price .amt{color:var(--indigo2)}
+.price .terms{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin:24px 0 36px}
+footer{padding:50px 56px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:rgba(10,10,11,.95)}
+footer a{color:var(--muted);text-decoration:none}
+@media(max-width:760px){.grid{grid-template-columns:1fr}nav,.hero,.feat,.price,footer{padding-left:24px;padding-right:24px}.rail{display:none}}
+
+.faq{padding:120px 56px;background:rgba(10,10,11,.9)}
+.faq-wrap{max-width:820px;margin:0 auto}
+details.faq-item{border-top:1px solid var(--line)}
+details.faq-item:last-of-type{border-bottom:1px solid var(--line)}
+details.faq-item summary{list-style:none;cursor:pointer;padding:24px 0;font-family:'Anton',sans-serif;text-transform:uppercase;font-size:22px;line-height:1.1;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:20px}
+details.faq-item summary::-webkit-details-marker{display:none}
+details.faq-item summary::after{content:'+';color:var(--indigo2);font-family:'JetBrains Mono',monospace;font-size:26px;flex-shrink:0}
+details.faq-item[open] summary::after{content:'\2212'}
+details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-height:1.6;max-width:680px}
+
+/* sticky buy bar */
+#stickybuy{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 56px;background:rgba(10,10,11,.92);border-top:1px solid var(--line);backdrop-filter:blur(8px);transform:translateY(110%);transition:transform .3s ease}
+#stickybuy.show{transform:translateY(0)}
+#stickybuy .sb-l{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+#stickybuy .sb-l b{color:var(--indigo2)}
+@media(max-width:760px){#stickybuy{padding:12px 18px}#stickybuy .sb-l span{display:none}}
+/* how it works */
+.how{padding:120px 56px;background:rgba(10,10,11,.82)}
+.how-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.step{background:rgba(10,10,11,.7);padding:44px 36px}
+.step .sn{font-family:'Anton',sans-serif;font-size:64px;line-height:1;color:var(--indigo2)}
+.step h4{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:26px;margin:14px 0 10px}
+.step p{color:#cbc7bf;font-size:15px;line-height:1.55}
+/* compare */
+.cmp{padding:120px 56px;background:rgba(10,10,11,.9)}
+.cmp-wrap{max-width:1040px;margin:0 auto}
+.cmp table{width:100%;border-collapse:collapse;font-size:15px}
+.cmp th,.cmp td{padding:16px 14px;border-bottom:1px solid var(--line);text-align:left}
+.cmp th{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cmp th.us,.cmp td.us{background:rgba(20,184,166,.12)}
+.cmp td.us{color:var(--indigo2);font-weight:600}
+.cmp .yes{color:var(--indigo2)}.cmp .no{color:#6e6c69}
+.cmp td:first-child{color:#cbc7bf}
+@media(max-width:760px){.how-wrap{grid-template-columns:1fr}.cmp{padding:80px 18px}.cmp th,.cmp td{padding:12px 8px;font-size:13px}}
+/* presets row */
+.pre{padding:120px 56px;background:rgba(10,10,11,.85)}
+.pre-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.preset{background:rgba(10,10,11,.72);padding:36px 32px}
+.preset .pn{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.2em}
+.preset h5{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:26px;line-height:1;margin:12px 0 6px;color:var(--ink)}
+.preset .cap{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--indigo2);margin-bottom:12px}
+.preset p{color:#cbc7bf;font-size:14px;line-height:1.5}
+@media(max-width:760px){.pre-wrap{grid-template-columns:1fr}.pre{padding:80px 18px}}
+/* mini-demos in feature cells */
+.demo{height:96px;margin-bottom:22px;border:1px solid var(--line);border-radius:8px;background:#0c0c0d;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.d-row{display:flex;align-items:center;gap:10px;width:84%}
+.d-tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-left:10px}
+.d-glyph{font-size:30px;animation:glow 3s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.d-chk{color:var(--indigo2);font-size:16px;opacity:0;animation:pop 3s ease-in-out infinite}
+@keyframes pop{0%,55%{opacity:0;transform:scale(.6)}65%,100%{opacity:1;transform:scale(1)}}
+/* file-type chips */
+.d-types{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
+.d-types span{font-family:'JetBrains Mono',monospace;font-size:11px;color:#cbc7bf;border:1px solid var(--line);border-radius:4px;padding:5px 9px}
+.d-types span.on{color:var(--indigo2);border-color:rgba(20,184,166,.45);background:rgba(20,184,166,.08)}
+/* audit reveal demo */
+.d-audit{font-family:'JetBrains Mono',monospace;font-size:12px;color:#cbc7bf;display:flex;flex-direction:column;gap:6px;width:84%}
+.d-audit .ln{display:flex;align-items:center;justify-content:space-between}
+.d-audit .strike{text-decoration:line-through;color:#6e6c69;animation:fadeline 3s ease-in-out infinite}
+@keyframes fadeline{0%,45%{opacity:1;text-decoration-color:transparent}60%,100%{opacity:.45;text-decoration-color:#6e6c69}}
+.d-audit .gone{color:var(--indigo2);opacity:0;animation:pop 3s ease-in-out infinite}
+/* strip bar (metadata weight) */
+.d-bar{height:6px;border-radius:3px;background:rgba(255,255,255,.12);flex:1;overflow:hidden}
+.d-bar i{display:block;height:100%;width:100%;background:var(--indigo2);animation:shrink 3s ease-in-out infinite}
+@keyframes shrink{0%{width:100%}55%{width:0%}100%{width:0%}}
+/* clean pop */
+.d-clip{font-family:'JetBrains Mono',monospace;font-size:12px;color:#cbc7bf;display:flex;align-items:center;gap:10px}
+.d-clip b{color:var(--indigo2)}
+/* shield dot */
+.d-rec{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#cbc7bf}
+.d-rec .dot{width:11px;height:11px;border-radius:50%;background:var(--indigo2);animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+</style>
+</head>
+<body>
+
+<!-- hero background video (Higgsfield · teal abstracto: archivo → audit → metadata strippeada) con gradiente CSS de fallback -->
+<video class="herobg" autoplay muted loop playsinline poster="og.png"><source src="hero.mp4" type="video/mp4"></video>
+<div class="bgtint"></div>
+<div class="scanfixed"></div>
+
+<div class="rail l"><span>Perfect Paradox Ltd · NI739317</span></div>
+<div class="rail r"><span>Scrubd · v0.1.0 · macOS 14+</span></div>
+
+<nav>
+  <div class="brand">PERFECT&nbsp;PARADOX</div>
+  <div class="links"><a href="#features">Features</a><a href="#buy">Buy</a><a href="/legal/privacy.html">Privacy</a></div>
+</nav>
+
+<div id="stickybuy"><div class="sb-l"><b>Scrubd</b> <span>&mdash; clean your documents before you send them</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px">Buy &middot; $14.99</button></div>
+<div class="page">
+<section class="hero">
+  <div class="veil"></div>
+  <div class="inner">
+    <div class="kicker">Metadata cleaner · On-device · No subscription</div>
+    <h1>SCRU<span class="stroke">BD</span></h1>
+    <p class="sub">Clean your documents before you send them. Metadata hides who you are, where you were, who edited what &mdash; Scrubd strips it from images, PDFs, Office files and video, in one drag-and-drop. <b style="color:#fff">100% on your Mac.</b></p>
+    <div class="cta-row">
+      <a href="https://scrubd.perfectparadox.co.uk/Scrubd.zip" class="btn primary">Download trial →</a>
+      <button class="btn" onclick="openCheckout()">Buy · $14.99</button>
+      <span class="price-tag">ONE-TIME · 14-DAY TRIAL</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div>DRAG → AUDIT → CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEE BEFORE YOU CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC · NO ACCOUNT · NO UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;DRAG → AUDIT → CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEE BEFORE YOU CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC · NO ACCOUNT · NO UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
+
+
+<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label">// How it works</div></div><div class="how-wrap">
+<div class="step"><div class="sn">1</div><h4>Drag in<br>your files</h4><p>Drop one file or a whole batch onto Scrubd — photos, PDFs, Word, Excel, PowerPoint, MP4 or MOV. No upload, no account, no project to set up. Everything happens on your Mac.</p></div>
+<div class="step"><div class="sn">2</div><h4>See what's<br>hidden inside</h4><p>Scrubd audits each file and shows you exactly what metadata is buried in it — GPS coordinates, author names, edit history, comments, the software that made it. No blind cleaning.</p></div>
+<div class="step"><div class="sn">3</div><h4>Pick an intent,<br>clean it</h4><p>Choose a profile — Publish to web, Send to client/lawyer, Strip everything — and Scrubd writes clean copies, leaving your originals untouched. Now they're safe to send.</p></div>
+</div></section>
+<section class="appshow" style="padding:120px 56px;background:rgba(10,10,11,.82)">
+  <div style="max-width:760px;margin:0 auto">
+    <div class="sec-label">// See it work</div>
+    <div style="background:#1c1c1e;border:0.5px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);font-family:-apple-system,system-ui,sans-serif;max-width:420px;margin:0 auto">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;background:#2a2a2c;border-bottom:0.5px solid rgba(255,255,255,.08)">
+        <span style="font-size:13px;color:#e9e9ea;font-weight:600;display:flex;align-items:center;gap:7px"><span style="width:14px;height:16px;display:inline-block;background:#14b8a6;border-radius:2px 2px 4px 4px"></span>Scrubd</span>
+        <span style="font-size:11px;color:#8c8a86;display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:#14b8a6;display:inline-block"></span>AUDIT · 3 files</span>
+      </div>
+      <div style="padding:18px 18px 14px;border-bottom:0.5px solid rgba(255,255,255,.07)">
+        <div style="border:1.5px dashed rgba(94,234,212,.55);border-radius:10px;padding:22px 18px;text-align:center;color:#cbc7bf;font-size:13px;position:relative">Drop files to audit · jpg · pdf · docx<span style="position:absolute;right:-5px;bottom:-5px;width:10px;height:10px;background:#14b8a6;border-radius:2px"></span></div>
+      </div>
+      <div style="padding:12px 18px 6px;font-size:11px;color:#8c8a86">contract-draft.docx · found</div>
+      <div style="padding:4px 18px 12px;border-bottom:0.5px solid rgba(255,255,255,.06);font-size:12.5px;color:#cbc7bf;line-height:2">
+        <div style="display:flex;justify-content:space-between"><span>Author</span><span style="color:#ef6e6e">J. Smith</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Tracked changes</span><span style="color:#ef6e6e">14 edits</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Comments</span><span style="color:#ef6e6e">6</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Company</span><span style="color:#ef6e6e">Acme LLP</span></div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
+        <span style="font-size:14px;color:#f4f1ea">Intent profile</span>
+        <span style="font-size:13px;color:#5eead4;font-weight:600">Send to lawyer ▾</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
+        <span style="font-size:14px;color:#f4f1ea">After cleaning</span>
+        <span style="font-size:13px;color:#5eead4">0 hidden fields left</span>
+      </div>
+      <div style="padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
+        <div style="background:#14b8a6;color:#04211c;border-radius:8px;padding:11px;font-size:13px;font-weight:700;text-align:center">Clean 3 files → safe copies</div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:#161617;font-size:12px;color:#8c8a86">
+        <span>Originals kept</span><span style="color:#cbc7bf">writes *-clean copies</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 18px;background:#161617;border-top:0.5px solid rgba(255,255,255,.07);font-size:11px;color:#6e6c69">
+        <span>On-device · No telemetry</span><span>No upload · No account</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feat" id="features"><div class="feat-inner"><div class="sec-label">// What it does</div><div class="grid">
+<div class="cell"><div class="demo"><div class="d-types"><span class="on">JPEG</span><span class="on">PNG</span><span class="on">HEIC</span><span class="on">PDF</span><span class="on">DOCX</span><span class="on">XLSX</span><span class="on">PPTX</span><span class="on">MP4</span><span class="on">MOV</span></div></div><div class="n">01</div><div><h3>Every format<br>that matters</h3><p>Not just photos. Scrubd cleans <b style="color:var(--indigo2)">images</b> (JPEG, PNG, HEIC, TIFF&hellip;), <b style="color:var(--indigo2)">PDFs</b>, <b style="color:var(--indigo2)">Office documents</b> (.docx, .xlsx, .pptx) and <b style="color:var(--indigo2)">video</b> (MP4, MOV) &mdash; the real files you actually email, in one drag-and-drop.</p></div></div>
+<div class="cell"><div class="demo"><div class="d-audit"><div class="ln"><span class="strike">GPS · 51.50°N, 0.12°W</span><span class="gone">&#10003; gone</span></div><div class="ln"><span class="strike">Author · J. Smith</span><span class="gone">&#10003; gone</span></div><div class="ln"><span class="strike">Edited · 14 revisions</span><span class="gone">&#10003; gone</span></div></div></div><div class="n">02</div><div><h3>See before<br>you clean</h3><p>Scrubd shows you exactly what hidden metadata is inside each file &mdash; GPS, author, edit history, software, comments &mdash; and what will be left after. You see it, then you strip it. <b style="color:var(--indigo2)">No blind cleaning.</b></p></div></div>
+<div class="cell"><div class="demo"><div class="d-row" style="justify-content:center;gap:14px"><span class="d-tag" style="margin:0">Publish</span><span class="d-tag" style="margin:0;color:var(--indigo2)">Send to lawyer</span><span class="d-tag" style="margin:0">Strip all</span></div></div><div class="n">03</div><div><h3>One-click<br>intent profiles</h3><p>Pick the situation, not the settings: <b style="color:var(--indigo2)">Publish to web</b>, <b style="color:var(--indigo2)">Send to client/lawyer</b>, or <b style="color:var(--indigo2)">Strip everything</b>. Scrubd applies the right rules for each &mdash; keep an image's colour profile for the web, nuke every identifying field for a legal handover.</p></div></div>
+<div class="cell"><div class="demo"><div class="d-row" style="justify-content:center;gap:14px"><span class="d-tag" style="margin:0">198 fields</span><span class="d-bar"><i></i></span><span class="d-chk">&#10003;</span></div></div><div class="n">04</div><div><h3>Office is<br>the difference</h3><p>Word, Excel and PowerPoint carry author names, tracked-change history, comments and company info that survive normal sharing &mdash; the part free EXIF tools <b style="color:var(--indigo2)">can't touch</b>. Scrubd scrubs them in batch, the way a firm needs before a document goes out.</p></div></div>
+</div></div></section>
+
+<section class="pre"><div style="max-width:1100px;margin:0 auto"><div class="sec-label">// Intent profiles</div></div><div class="pre-wrap">
+<div class="preset"><div class="pn">01</div><h5>Publish to web</h5><div class="cap">GPS &amp; identity out</div><p>Strips location, camera serials, author and device fingerprints while keeping the file usable &mdash; perfect for photos and images headed to a blog, store or social post.</p></div>
+<div class="preset"><div class="pn">02</div><h5>Send to client / lawyer</h5><div class="cap">Office-grade scrub</div><p>Removes author names, tracked changes, comments and company info from Word, Excel and PowerPoint, plus all document properties &mdash; so what you send is the document, and nothing about who made it.</p></div>
+<div class="preset"><div class="pn">03</div><h5>Strip everything</h5><div class="cap">Maximum clean</div><p>The nuclear option: every removable metadata field across every supported format, gone. When in doubt, this leaves nothing hidden behind for anyone to dig out.</p></div>
+</div></section>
+
+<section class="cmp"><div class="cmp-wrap"><div class="sec-label">// How it compares</div>
+<table><thead><tr><th></th><th class="us">Scrubd</th><th>ExifCleaner</th><th>ImageOptim</th><th>Preview / Finder</th><th>Online strippers</th></tr></thead><tbody>
+<tr><td>Cleans images</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">~ partial</span></td><td class="yes">&#10003;</td></tr>
+<tr><td>Cleans PDFs</td><td class="us yes">&#10003;</td><td><span class="no">~ limited</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">~ varies</span></td></tr>
+<tr><td>Cleans Office (.docx / .xlsx / .pptx)</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td>Cleans video (MP4 / MOV)</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">~ rare</span></td></tr>
+<tr><td>Audit — see metadata before you clean</td><td class="us yes">&#10003;</td><td><span class="no">~ view only</span></td><td><span class="no">&#10007;</span></td><td><span class="no">~ inspector</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td>Intent profiles (web / client / strip all)</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td>Runs on-device — nothing leaves your Mac</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">&#10007; uploads your file</span></td></tr>
+<tr><td>Price</td><td class="us yes">$14.99 one-time</td><td class="yes">free · images</td><td class="yes">free · images</td><td class="yes">built-in</td><td><span class="no">free · uploads</span></td></tr>
+</tbody></table>
+<p style="margin-top:22px;color:#8c8a86;font-size:13px;line-height:1.6">The free tools are great &mdash; for photos. ExifCleaner and ImageOptim strip image EXIF beautifully, but they don't touch the Word, Excel and PowerPoint files most people actually email, and they can't audit a PDF or a video. Online strippers do more formats but you have to <b style="color:#ef6e6e">upload your confidential file to a stranger's server</b> to use them. Scrubd does the formats that matter &mdash; <b style="color:var(--indigo2)">images, PDFs, Office and video</b> &mdash; shows you what's hidden, and never lets a byte leave your Mac. One-time $14.99.</p>
+</div></section>
+<section class="price" id="buy">
+  <div class="sec-label" style="text-align:center">// One price. Forever.</div>
+  <div class="big">SCRUBD <span class="amt">$14.99</span></div>
+  <div class="terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
+  <button class="btn primary" onclick="openCheckout()">Buy Scrubd →</button>
+</section>
+
+<section class="faq"><div class="faq-wrap"><div class="sec-label">// Questions</div>
+<details class="faq-item"><summary>What file formats does it clean?</summary><p>Images (JPEG, PNG, HEIC, TIFF and more), PDFs, Microsoft Office documents (.docx, .xlsx, .pptx) and video (MP4 and MOV). Scrubd is built to cover the files you actually share — not just photos. You can drag in a single file or a whole batch at once, and it handles each one with the right rules for its type.</p></details>
+<details class="faq-item"><summary>Does anything get uploaded to the internet?</summary><p>No. Auditing, stripping and writing clean copies all run entirely on your Mac. Your documents are never uploaded anywhere — there is no account, no cloud, no server that ever sees your files. The only network connections Scrubd makes are an update check and a one-off licence validation, never your files. You can confirm this with a firewall tool like Little Snitch or LuLu.</p></details>
+<details class="faq-item"><summary>Does it overwrite my original, or make a copy?</summary><p>By default Scrubd leaves your originals untouched and writes a clean copy alongside them (for example, <code>report-clean.pdf</code>), so you always have the source if you need it. If you'd rather clean in place, you can switch to overwrite — but the safe, copy-first behaviour is the default precisely so nothing is ever lost.</p></details>
+<details class="faq-item"><summary>Does it really work with Word, Excel and PowerPoint?</summary><p>Yes — that's the whole point. Office files quietly carry author names, your company name, tracked-change history, comments and revision data that survive normal sharing and that free EXIF tools simply don't touch. Scrubd opens the document package, strips those fields, and writes a clean file — in batch, so a folder of contracts is cleaned in one go.</p></details>
+<details class="faq-item"><summary>What is an intent profile?</summary><p>Instead of toggling dozens of individual fields, you pick the situation. "Publish to web" strips location and identity but keeps a file web-ready; "Send to client/lawyer" does an Office-grade scrub of authorship and history; "Strip everything" removes every removable field across every format. The audit view always shows you exactly what each profile will remove before you commit.</p></details>
+<details class="faq-item"><summary>Who is Scrubd for?</summary><p>Anyone who emails documents and would rather not hand over hidden data with them: lawyers and firms sending contracts, journalists protecting sources, freelancers sending deliverables to clients, and anyone publishing photos who doesn't want their home address baked into the GPS. If a file leaves your hands, Scrubd makes sure only the file leaves.</p></details>
+<details class="faq-item"><summary>Is it notarized / safe to run?</summary><p>Yes. Scrubd is sold directly and distributed as a Developer ID app, notarized by Apple. That keeps it lightweight while still being Gatekeeper-checked and safe to run. It needs no special system permissions beyond access to the files you drag in.</p></details>
+<details class="faq-item"><summary>Is it a one-time purchase? How many Macs?</summary><p>One-time, $14.99 — buy once, own forever, with free updates to your version. No subscription. A single licence covers all the Macs you personally own, with no per-seat counting.</p></details>
+<details class="faq-item"><summary>Can I get a refund?</summary><p>Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
+</div></section>
+<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center">Compress, OCR & PDF tools</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen clips</div></a><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center">Compress, OCR & PDF tools</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen clips</div></a></div></div></section>
+<footer>
+  <div>© 2026 Perfect Paradox Ltd · NI739317</div>
+  <div><a href="/legal/privacy.html">Privacy</a> · <a href="/legal/terms.html">Terms</a> · <a href="/legal/refund.html">Refund</a> · <a href="/legal/eula.html">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+</footer>
+</div>
+
+<!-- PADDLE: client token de cuenta ya puesto. PENDIENTE: sustituir PADDLE_PRICE_ID por el pri_... de Scrubd ($14.99). -->
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+  const PADDLE_TOKEN = 'live_0c45d27a78741d1285949859fcc';
+  const PADDLE_PRICE = 'PADDLE_PRICE_ID_PLACEHOLDER';
+  const PADDLE_READY = PADDLE_TOKEN && PADDLE_PRICE && !PADDLE_PRICE.includes('PADDLE_PRICE_ID');
+  if (PADDLE_READY && window.Paddle) {
+    Paddle.Initialize({ token: PADDLE_TOKEN });
+  }
+  function openCheckout() {
+    if (PADDLE_READY && window.Paddle) {
+      Paddle.Checkout.open({ items: [{ priceId: PADDLE_PRICE, quantity: 1 }] });
+    } else {
+      window.location.href = 'mailto:info@perfectparadox.co.uk?subject=Buy%20Scrubd';
+    }
+  }
+</script>
+<script>(function(){var b=document.getElementById('stickybuy');addEventListener('scroll',function(){if(scrollY>700)b.classList.add('show');else b.classList.remove('show')})})();</script>
+</body>
+</html>
