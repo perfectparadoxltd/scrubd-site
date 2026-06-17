@@ -6,10 +6,10 @@
             <title>0.1.0</title>
             <pubDate>Wed, 17 Jun 2026 19:53:55 +0100</pubDate>
             <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://scrubd.perfectparadox.co.uk/Scrubd-0.1.0.zip" length="3155856" type="application/octet-stream" sparkle:edSignature="u51MEG5HzSrD2ehl6PMRv3GzOo/ll4W/KZiuhWZuKmPIQvEexVvoBG8XQslFsjcZWP+hIXWRWvmC+2fMnuvUBw=="/>
+            <enclosure url="https://scrubd.perfectparadox.co.uk/Scrubd-0.1.1.zip" length="3163895" type="application/octet-stream" sparkle:edSignature="QYHxKIJlaOKRosfW2WJCMOJxy6cedCT2o5+/xnlRfBdvm8LvCGhQty1MfMr7ih/qEsmDCXSwOQG8F2UxZXo/Aw=="/>
         </item>
     </channel>
 </rss>
