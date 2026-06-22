@@ -26,6 +26,27 @@ window.I18N = {
 
   /* ===================================================================== EN */
   en: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 languages",
+    "langs.label": "// Speaks your language",
+    "langs.body": "Scrubd's whole interface is localized into 8 languages — it follows your Mac and speaks your language out of the box. No setup, nothing to switch on.",
+    "fb.label": "// Feedback",
+    "fb.title": "Help shape<br>Scrubd",
+    "fb.lead": "Found a bug, or wish it did one more thing? Tell us — every message goes straight to the people who build Scrubd. No account, no tracking.",
+    "fb.type.idea": "Idea",
+    "fb.type.bug": "Bug",
+    "fb.type.praise": "Praise",
+    "fb.type.other": "Other",
+    "fb.msg.label": "Your message",
+    "fb.msg.ph": "What's on your mind?",
+    "fb.email.label": "Email (optional — so we can reply)",
+    "fb.email.ph": "you@example.com",
+    "fb.send": "Send feedback →",
+    "fb.note": "We read everything. Honest feedback shapes the next update.",
+    "fb.result.ok": "Thank you — your feedback is on its way to the team.",
+    "fb.result.err": "Could not send right now. You can email us at ",
+    "fb.result.empty": "Please write a short message first.",
+    "fb.sending": "Sending…",
     "meta.title": "Scrubd — Clean your documents before you send them",
     "meta.description": "Scrubd strips hidden metadata from your files before you share them: images, PDFs, Office documents and video — GPS, author names, edit history, comments. One drag-and-drop, see before you clean, 100% on your Mac. One-time $14.99, zero telemetry. macOS 14+.",
 
@@ -42,7 +63,7 @@ window.I18N = {
     "hero.buy": "Buy · $14.99",
     "hero.terms": "ONE-TIME · 14-DAY TRIAL",
 
-    "marquee": "DRAG → AUDIT → CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEE BEFORE YOU CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC · NO ACCOUNT · NO UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;DRAG → AUDIT → CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEE BEFORE YOU CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC · NO ACCOUNT · NO UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "DRAG → AUDIT → CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEE BEFORE YOU CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC · NO ACCOUNT · NO UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 LANGUAGES&nbsp;&nbsp;·&nbsp;&nbsp;DRAG → AUDIT → CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEE BEFORE YOU CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC · NO ACCOUNT · NO UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 LANGUAGES&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// How it works",
     "how.1.title": "Drag in<br>your files",
@@ -163,6 +184,27 @@ window.I18N = {
 
   /* ===================================================================== ES */
   es: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 idiomas",
+    "langs.label": "// Habla tu idioma",
+    "langs.body": "Toda la interfaz de Scrubd está traducida a 8 idiomas: sigue el idioma de tu Mac y habla el tuyo desde el primer momento. Sin configurar nada.",
+    "fb.label": "// Tu opinión",
+    "fb.title": "Ayuda a mejorar<br>Scrubd",
+    "fb.lead": "¿Has encontrado un fallo o te gustaría que hiciera algo más? Cuéntanoslo: cada mensaje llega directo a quienes desarrollan Scrubd. Sin cuenta y sin rastreo.",
+    "fb.type.idea": "Idea",
+    "fb.type.bug": "Fallo",
+    "fb.type.praise": "Elogio",
+    "fb.type.other": "Otro",
+    "fb.msg.label": "Tu mensaje",
+    "fb.msg.ph": "¿Qué tienes en mente?",
+    "fb.email.label": "Correo (opcional, para poder responderte)",
+    "fb.email.ph": "tu@ejemplo.com",
+    "fb.send": "Enviar comentario →",
+    "fb.note": "Lo leemos todo. Tu opinión sincera marca la próxima actualización.",
+    "fb.result.ok": "Gracias: tu comentario va de camino al equipo.",
+    "fb.result.err": "No se ha podido enviar ahora mismo. Puedes escribirnos a ",
+    "fb.result.empty": "Escribe un mensaje breve primero, por favor.",
+    "fb.sending": "Enviando…",
     "meta.title": "Scrubd — Limpia tus documentos antes de enviarlos",
     "meta.description": "Scrubd elimina los metadatos ocultos de tus archivos antes de compartirlos: imágenes, PDF, documentos de Office y vídeo — GPS, nombres de autor, historial de ediciones, comentarios. Un solo arrastrar y soltar, ve antes de limpiar, 100% en tu Mac. Pago único de $14.99, cero telemetría. macOS 14+.",
 
@@ -179,7 +221,7 @@ window.I18N = {
     "hero.buy": "Comprar · $14.99",
     "hero.terms": "PAGO ÚNICO · PRUEBA DE 14 DÍAS",
 
-    "marquee": "ARRASTRA → AUDITA → LIMPIA&nbsp;&nbsp;·&nbsp;&nbsp;<b>CERO TELEMETRÍA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMÁGENES · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VE ANTES DE LIMPIAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SALE DE TU MAC · SIN CUENTA · SIN SUBIDAS</b>&nbsp;&nbsp;·&nbsp;&nbsp;ARRASTRA → AUDITA → LIMPIA&nbsp;&nbsp;·&nbsp;&nbsp;<b>CERO TELEMETRÍA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMÁGENES · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VE ANTES DE LIMPIAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SALE DE TU MAC · SIN CUENTA · SIN SUBIDAS</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "ARRASTRA → AUDITA → LIMPIA&nbsp;&nbsp;·&nbsp;&nbsp;<b>CERO TELEMETRÍA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMÁGENES · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VE ANTES DE LIMPIAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SALE DE TU MAC · SIN CUENTA · SIN SUBIDAS</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 IDIOMAS&nbsp;&nbsp;·&nbsp;&nbsp;ARRASTRA → AUDITA → LIMPIA&nbsp;&nbsp;·&nbsp;&nbsp;<b>CERO TELEMETRÍA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMÁGENES · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VE ANTES DE LIMPIAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SALE DE TU MAC · SIN CUENTA · SIN SUBIDAS</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 IDIOMAS&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// Cómo funciona",
     "how.1.title": "Arrastra<br>tus archivos",
@@ -300,6 +342,27 @@ window.I18N = {
 
   /* ===================================================================== FR */
   fr: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 langues",
+    "langs.label": "// Parle votre langue",
+    "langs.body": "Toute l'interface de Scrubd est traduite en 8 langues : elle suit la langue de votre Mac et parle la vôtre dès le départ. Aucune configuration.",
+    "fb.label": "// Votre avis",
+    "fb.title": "Aidez à façonner<br>Scrubd",
+    "fb.lead": "Un bug, ou une fonction qui vous manque ? Dites-le-nous — chaque message arrive directement à l'équipe qui développe Scrubd. Sans compte, sans pistage.",
+    "fb.type.idea": "Idée",
+    "fb.type.bug": "Bug",
+    "fb.type.praise": "Compliment",
+    "fb.type.other": "Autre",
+    "fb.msg.label": "Votre message",
+    "fb.msg.ph": "Qu'avez-vous en tête ?",
+    "fb.email.label": "E-mail (facultatif — pour vous répondre)",
+    "fb.email.ph": "vous@exemple.com",
+    "fb.send": "Envoyer →",
+    "fb.note": "Nous lisons tout. Vos retours sincères façonnent la prochaine mise à jour.",
+    "fb.result.ok": "Merci — votre message est en route vers l'équipe.",
+    "fb.result.err": "Envoi impossible pour le moment. Vous pouvez nous écrire à ",
+    "fb.result.empty": "Veuillez d'abord écrire un court message.",
+    "fb.sending": "Envoi…",
     "meta.title": "Scrubd — Nettoyez vos documents avant de les envoyer",
     "meta.description": "Scrubd supprime les métadonnées cachées de vos fichiers avant de les partager : images, PDF, documents Office et vidéo — GPS, noms d'auteur, historique des modifications, commentaires. Un glisser-déposer, voyez avant de nettoyer, 100 % sur votre Mac. Achat unique de 14,99 $, zéro télémétrie. macOS 14+.",
 
@@ -316,7 +379,7 @@ window.I18N = {
     "hero.buy": "Acheter · $14.99",
     "hero.terms": "ACHAT UNIQUE · ESSAI DE 14 JOURS",
 
-    "marquee": "GLISSER → AUDITER → NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZÉRO TÉLÉMÉTRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDÉO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ACHAT UNIQUE</b>&nbsp;&nbsp;·&nbsp;&nbsp;VOIR AVANT DE NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>RIEN NE QUITTE VOTRE MAC · SANS COMPTE · SANS ENVOI</b>&nbsp;&nbsp;·&nbsp;&nbsp;GLISSER → AUDITER → NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZÉRO TÉLÉMÉTRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDÉO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ACHAT UNIQUE</b>&nbsp;&nbsp;·&nbsp;&nbsp;VOIR AVANT DE NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>RIEN NE QUITTE VOTRE MAC · SANS COMPTE · SANS ENVOI</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "GLISSER → AUDITER → NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZÉRO TÉLÉMÉTRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDÉO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ACHAT UNIQUE</b>&nbsp;&nbsp;·&nbsp;&nbsp;VOIR AVANT DE NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>RIEN NE QUITTE VOTRE MAC · SANS COMPTE · SANS ENVOI</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 LANGUES&nbsp;&nbsp;·&nbsp;&nbsp;GLISSER → AUDITER → NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZÉRO TÉLÉMÉTRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGES · PDF · OFFICE · VIDÉO&nbsp;&nbsp;·&nbsp;&nbsp;<b>ACHAT UNIQUE</b>&nbsp;&nbsp;·&nbsp;&nbsp;VOIR AVANT DE NETTOYER&nbsp;&nbsp;·&nbsp;&nbsp;<b>RIEN NE QUITTE VOTRE MAC · SANS COMPTE · SANS ENVOI</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 LANGUES&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// Comment ça marche",
     "how.1.title": "Glissez<br>vos fichiers",
@@ -437,6 +500,27 @@ window.I18N = {
 
   /* ===================================================================== DE */
   de: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 Sprachen",
+    "langs.label": "// Spricht deine Sprache",
+    "langs.body": "Die gesamte Oberfläche von Scrubd ist in 8 Sprachen übersetzt – sie folgt der Sprache deines Macs und spricht von Anfang an deine. Ohne Einrichtung.",
+    "fb.label": "// Feedback",
+    "fb.title": "Gestalte<br>Scrubd mit",
+    "fb.lead": "Einen Fehler gefunden oder fehlt dir eine Funktion? Sag es uns — jede Nachricht geht direkt an das Team hinter Scrubd. Kein Konto, kein Tracking.",
+    "fb.type.idea": "Idee",
+    "fb.type.bug": "Fehler",
+    "fb.type.praise": "Lob",
+    "fb.type.other": "Sonstiges",
+    "fb.msg.label": "Deine Nachricht",
+    "fb.msg.ph": "Was beschäftigt dich?",
+    "fb.email.label": "E-Mail (optional — für unsere Antwort)",
+    "fb.email.ph": "du@beispiel.com",
+    "fb.send": "Feedback senden →",
+    "fb.note": "Wir lesen alles. Ehrliches Feedback prägt das nächste Update.",
+    "fb.result.ok": "Danke — dein Feedback ist auf dem Weg zum Team.",
+    "fb.result.err": "Senden gerade nicht möglich. Du kannst uns schreiben an ",
+    "fb.result.empty": "Bitte schreibe zuerst eine kurze Nachricht.",
+    "fb.sending": "Senden…",
     "meta.title": "Scrubd — Säubere deine Dokumente, bevor du sie sendest",
     "meta.description": "Scrubd entfernt versteckte Metadaten aus deinen Dateien, bevor du sie teilst: Bilder, PDFs, Office-Dokumente und Video — GPS, Autorennamen, Bearbeitungsverlauf, Kommentare. Ein Drag-and-drop, sehen bevor du säuberst, 100 % auf deinem Mac. Einmalig 14,99 $, null Telemetrie. macOS 14+.",
 
@@ -453,7 +537,7 @@ window.I18N = {
     "hero.buy": "Kaufen · $14.99",
     "hero.terms": "EINMALIG · 14-TAGE-TEST",
 
-    "marquee": "ZIEHEN → PRÜFEN → SÄUBERN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULL TELEMETRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;BILDER · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>EINMALKAUF</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEHEN BEVOR DU SÄUBERST&nbsp;&nbsp;·&nbsp;&nbsp;<b>NICHTS VERLÄSST DEINEN MAC · KEIN KONTO · KEIN UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;ZIEHEN → PRÜFEN → SÄUBERN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULL TELEMETRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;BILDER · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>EINMALKAUF</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEHEN BEVOR DU SÄUBERST&nbsp;&nbsp;·&nbsp;&nbsp;<b>NICHTS VERLÄSST DEINEN MAC · KEIN KONTO · KEIN UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "ZIEHEN → PRÜFEN → SÄUBERN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULL TELEMETRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;BILDER · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>EINMALKAUF</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEHEN BEVOR DU SÄUBERST&nbsp;&nbsp;·&nbsp;&nbsp;<b>NICHTS VERLÄSST DEINEN MAC · KEIN KONTO · KEIN UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 SPRACHEN&nbsp;&nbsp;·&nbsp;&nbsp;ZIEHEN → PRÜFEN → SÄUBERN&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULL TELEMETRIE</b>&nbsp;&nbsp;·&nbsp;&nbsp;BILDER · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>EINMALKAUF</b>&nbsp;&nbsp;·&nbsp;&nbsp;SEHEN BEVOR DU SÄUBERST&nbsp;&nbsp;·&nbsp;&nbsp;<b>NICHTS VERLÄSST DEINEN MAC · KEIN KONTO · KEIN UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 SPRACHEN&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// So funktioniert's",
     "how.1.title": "Ziehe deine<br>Dateien hinein",
@@ -574,6 +658,27 @@ window.I18N = {
 
   /* ===================================================================== IT */
   it: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 lingue",
+    "langs.label": "// Parla la tua lingua",
+    "langs.body": "L'intera interfaccia di Scrubd è tradotta in 8 lingue: segue la lingua del tuo Mac e parla la tua fin da subito. Senza configurare nulla.",
+    "fb.label": "// Feedback",
+    "fb.title": "Aiuta a migliorare<br>Scrubd",
+    "fb.lead": "Hai trovato un bug o vorresti una funzione in più? Dillo a noi: ogni messaggio arriva direttamente a chi sviluppa Scrubd. Nessun account, nessun tracciamento.",
+    "fb.type.idea": "Idea",
+    "fb.type.bug": "Bug",
+    "fb.type.praise": "Elogio",
+    "fb.type.other": "Altro",
+    "fb.msg.label": "Il tuo messaggio",
+    "fb.msg.ph": "A cosa stai pensando?",
+    "fb.email.label": "Email (facoltativa — per risponderti)",
+    "fb.email.ph": "tu@esempio.com",
+    "fb.send": "Invia feedback →",
+    "fb.note": "Leggiamo tutto. Un feedback sincero plasma il prossimo aggiornamento.",
+    "fb.result.ok": "Grazie — il tuo feedback è in arrivo al team.",
+    "fb.result.err": "Impossibile inviare ora. Puoi scriverci a ",
+    "fb.result.empty": "Scrivi prima un breve messaggio.",
+    "fb.sending": "Invio…",
     "meta.title": "Scrubd — Pulisci i tuoi documenti prima di inviarli",
     "meta.description": "Scrubd rimuove i metadati nascosti dai tuoi file prima di condividerli: immagini, PDF, documenti Office e video — GPS, nomi degli autori, cronologia delle modifiche, commenti. Un solo trascina-e-rilascia, vedi prima di pulire, 100% sul tuo Mac. Pagamento unico di $14.99, zero telemetria. macOS 14+.",
 
@@ -590,7 +695,7 @@ window.I18N = {
     "hero.buy": "Acquista · $14.99",
     "hero.terms": "PAGAMENTO UNICO · PROVA DI 14 GIORNI",
 
-    "marquee": "TRASCINA → CONTROLLA → PULISCI&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMMAGINI · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO UNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEDI PRIMA DI PULIRE&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULLA LASCIA IL TUO MAC · SENZA ACCOUNT · SENZA UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;TRASCINA → CONTROLLA → PULISCI&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMMAGINI · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO UNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEDI PRIMA DI PULIRE&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULLA LASCIA IL TUO MAC · SENZA ACCOUNT · SENZA UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "TRASCINA → CONTROLLA → PULISCI&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMMAGINI · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO UNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEDI PRIMA DI PULIRE&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULLA LASCIA IL TUO MAC · SENZA ACCOUNT · SENZA UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 LINGUE&nbsp;&nbsp;·&nbsp;&nbsp;TRASCINA → CONTROLLA → PULISCI&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMMAGINI · PDF · OFFICE · VIDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO UNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEDI PRIMA DI PULIRE&nbsp;&nbsp;·&nbsp;&nbsp;<b>NULLA LASCIA IL TUO MAC · SENZA ACCOUNT · SENZA UPLOAD</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 LINGUE&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// Come funziona",
     "how.1.title": "Trascina<br>i tuoi file",
@@ -711,6 +816,27 @@ window.I18N = {
 
   /* ===================================================================== PT */
   pt: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 idiomas",
+    "langs.label": "// Fala a sua língua",
+    "langs.body": "Toda a interface do Scrubd está traduzida em 8 idiomas: acompanha o idioma do seu Mac e fala o seu desde o início. Sem configurar nada.",
+    "fb.label": "// Feedback",
+    "fb.title": "Ajude a melhorar<br>o Scrubd",
+    "fb.lead": "Encontrou um erro ou gostaria de mais uma função? Diga-nos — cada mensagem vai direto para quem desenvolve o Scrubd. Sem conta, sem rastreio.",
+    "fb.type.idea": "Ideia",
+    "fb.type.bug": "Erro",
+    "fb.type.praise": "Elogio",
+    "fb.type.other": "Outro",
+    "fb.msg.label": "A sua mensagem",
+    "fb.msg.ph": "O que tem em mente?",
+    "fb.email.label": "E-mail (opcional — para podermos responder)",
+    "fb.email.ph": "voce@exemplo.com",
+    "fb.send": "Enviar feedback →",
+    "fb.note": "Lemos tudo. Feedback sincero molda a próxima atualização.",
+    "fb.result.ok": "Obrigado — o seu feedback está a caminho da equipa.",
+    "fb.result.err": "Não foi possível enviar agora. Pode escrever-nos para ",
+    "fb.result.empty": "Escreva primeiro uma mensagem breve.",
+    "fb.sending": "A enviar…",
     "meta.title": "Scrubd — Limpe os seus documentos antes de os enviar",
     "meta.description": "O Scrubd remove os metadados ocultos dos seus ficheiros antes de os partilhar: imagens, PDF, documentos do Office e vídeo — GPS, nomes de autor, histórico de edições, comentários. Um só arrastar e largar, veja antes de limpar, 100% no seu Mac. Pagamento único de $14.99, zero telemetria. macOS 14+.",
 
@@ -727,7 +853,7 @@ window.I18N = {
     "hero.buy": "Comprar · $14.99",
     "hero.terms": "PAGAMENTO ÚNICO · TESTE DE 14 DIAS",
 
-    "marquee": "ARRASTAR → AUDITAR → LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGENS · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEJA ANTES DE LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SAI DO SEU MAC · SEM CONTA · SEM ENVIO</b>&nbsp;&nbsp;·&nbsp;&nbsp;ARRASTAR → AUDITAR → LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGENS · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEJA ANTES DE LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SAI DO SEU MAC · SEM CONTA · SEM ENVIO</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "ARRASTAR → AUDITAR → LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGENS · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEJA ANTES DE LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SAI DO SEU MAC · SEM CONTA · SEM ENVIO</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 IDIOMAS&nbsp;&nbsp;·&nbsp;&nbsp;ARRASTAR → AUDITAR → LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRIA</b>&nbsp;&nbsp;·&nbsp;&nbsp;IMAGENS · PDF · OFFICE · VÍDEO&nbsp;&nbsp;·&nbsp;&nbsp;<b>PAGAMENTO ÚNICO</b>&nbsp;&nbsp;·&nbsp;&nbsp;VEJA ANTES DE LIMPAR&nbsp;&nbsp;·&nbsp;&nbsp;<b>NADA SAI DO SEU MAC · SEM CONTA · SEM ENVIO</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 IDIOMAS&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// Como funciona",
     "how.1.title": "Arraste os<br>seus ficheiros",
@@ -848,6 +974,27 @@ window.I18N = {
 
   /* ===================================================================== JA */
   ja: {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8言語",
+    "langs.label": "// あなたの言語で",
+    "langs.body": "Scrubd のインターフェースは 8 言語に対応。Mac の言語に合わせて、最初からあなたの言語で表示されます。設定は不要です。",
+    "fb.label": "// フィードバック",
+    "fb.title": "Scrubd を<br>育てよう",
+    "fb.lead": "バグを見つけた、こんな機能がほしい——ぜひ教えてください。メッセージは Scrubd の開発チームに直接届きます。アカウント不要、追跡なし。",
+    "fb.type.idea": "アイデア",
+    "fb.type.bug": "バグ",
+    "fb.type.praise": "ほめ言葉",
+    "fb.type.other": "その他",
+    "fb.msg.label": "メッセージ",
+    "fb.msg.ph": "ご意見をどうぞ",
+    "fb.email.label": "メール（任意・返信用）",
+    "fb.email.ph": "you@example.com",
+    "fb.send": "送信する →",
+    "fb.note": "すべて拝見します。率直なご意見が次のアップデートをつくります。",
+    "fb.result.ok": "ありがとうございます。フィードバックをチームにお送りしました。",
+    "fb.result.err": "現在送信できませんでした。こちらまでメールでお知らせください: ",
+    "fb.result.empty": "まず短いメッセージを入力してください。",
+    "fb.sending": "送信中…",
     "meta.title": "Scrubd — 送信する前に書類をクリーンに",
     "meta.description": "Scrubdは共有する前にファイルから隠れたメタデータを削除します。画像、PDF、Office文書、動画から、GPS、作成者名、編集履歴、コメントを除去。ドラッグ＆ドロップ一つで、クリーンにする前に中身を確認でき、100%あなたのMac上で完結。買い切り$14.99、テレメトリーなし。macOS 14以降。",
 
@@ -864,7 +1011,7 @@ window.I18N = {
     "hero.buy": "購入 · $14.99",
     "hero.terms": "買い切り · 14日間の体験版",
 
-    "marquee": "ドラッグ → 監査 → クリーン&nbsp;&nbsp;·&nbsp;&nbsp;<b>テレメトリーゼロ</b>&nbsp;&nbsp;·&nbsp;&nbsp;画像 · PDF · OFFICE · 動画&nbsp;&nbsp;·&nbsp;&nbsp;<b>買い切り</b>&nbsp;&nbsp;·&nbsp;&nbsp;クリーンにする前に確認&nbsp;&nbsp;·&nbsp;&nbsp;<b>何もMacの外に出ない · アカウント不要 · アップロードなし</b>&nbsp;&nbsp;·&nbsp;&nbsp;ドラッグ → 監査 → クリーン&nbsp;&nbsp;·&nbsp;&nbsp;<b>テレメトリーゼロ</b>&nbsp;&nbsp;·&nbsp;&nbsp;画像 · PDF · OFFICE · 動画&nbsp;&nbsp;·&nbsp;&nbsp;<b>買い切り</b>&nbsp;&nbsp;·&nbsp;&nbsp;クリーンにする前に確認&nbsp;&nbsp;·&nbsp;&nbsp;<b>何もMacの外に出ない · アカウント不要 · アップロードなし</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "ドラッグ → 監査 → クリーン&nbsp;&nbsp;·&nbsp;&nbsp;<b>テレメトリーゼロ</b>&nbsp;&nbsp;·&nbsp;&nbsp;画像 · PDF · OFFICE · 動画&nbsp;&nbsp;·&nbsp;&nbsp;<b>買い切り</b>&nbsp;&nbsp;·&nbsp;&nbsp;クリーンにする前に確認&nbsp;&nbsp;·&nbsp;&nbsp;<b>何もMacの外に出ない · アカウント不要 · アップロードなし</b>&nbsp;&nbsp;·&nbsp;&nbsp;8言語対応&nbsp;&nbsp;·&nbsp;&nbsp;ドラッグ → 監査 → クリーン&nbsp;&nbsp;·&nbsp;&nbsp;<b>テレメトリーゼロ</b>&nbsp;&nbsp;·&nbsp;&nbsp;画像 · PDF · OFFICE · 動画&nbsp;&nbsp;·&nbsp;&nbsp;<b>買い切り</b>&nbsp;&nbsp;·&nbsp;&nbsp;クリーンにする前に確認&nbsp;&nbsp;·&nbsp;&nbsp;<b>何もMacの外に出ない · アカウント不要 · アップロードなし</b>&nbsp;&nbsp;·&nbsp;&nbsp;8言語対応&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// 使い方",
     "how.1.title": "ファイルを<br>ドラッグ",
@@ -985,6 +1132,27 @@ window.I18N = {
 
   /* ===================================================================== ZH-HANS */
   "zh-Hans": {
+    /* idiomas + feedback (multiidioma · v0.1) */
+    "hero.langs": "8 种语言",
+    "langs.label": "// 说你的语言",
+    "langs.body": "Scrubd 的整个界面已本地化为 8 种语言：跟随你的 Mac 语言，开箱即用地说你的语言。无需设置。",
+    "fb.label": "// 反馈",
+    "fb.title": "帮助打磨<br>Scrubd",
+    "fb.lead": "发现了问题，或希望增加某个功能？告诉我们——每条留言都会直达 Scrubd 的开发团队。无需账户，绝不追踪。",
+    "fb.type.idea": "建议",
+    "fb.type.bug": "问题",
+    "fb.type.praise": "称赞",
+    "fb.type.other": "其他",
+    "fb.msg.label": "你的留言",
+    "fb.msg.ph": "你在想什么？",
+    "fb.email.label": "邮箱（可选——以便回复你）",
+    "fb.email.ph": "you@example.com",
+    "fb.send": "发送反馈 →",
+    "fb.note": "我们会认真阅读每一条。真诚的反馈塑造下一次更新。",
+    "fb.result.ok": "谢谢——你的反馈正在发往团队。",
+    "fb.result.err": "暂时无法发送。你可以发邮件给我们： ",
+    "fb.result.empty": "请先写一条简短的留言。",
+    "fb.sending": "发送中…",
     "meta.title": "Scrubd — 发送文档前先清理干净",
     "meta.description": "Scrubd 在你分享文件前清除其中隐藏的元数据：图片、PDF、Office 文档和视频——GPS、作者姓名、编辑历史、批注。一次拖放，清理前先查看，100% 在你的 Mac 上完成。一次性 $14.99，零遥测。macOS 14 及以上。",
 
@@ -1001,7 +1169,7 @@ window.I18N = {
     "hero.buy": "购买 · $14.99",
     "hero.terms": "一次性付费 · 14 天试用",
 
-    "marquee": "拖放 → 审查 → 清理&nbsp;&nbsp;·&nbsp;&nbsp;<b>零遥测</b>&nbsp;&nbsp;·&nbsp;&nbsp;图片 · PDF · OFFICE · 视频&nbsp;&nbsp;·&nbsp;&nbsp;<b>一次性付费</b>&nbsp;&nbsp;·&nbsp;&nbsp;清理前先查看&nbsp;&nbsp;·&nbsp;&nbsp;<b>没有任何数据离开你的 Mac · 无需账户 · 无需上传</b>&nbsp;&nbsp;·&nbsp;&nbsp;拖放 → 审查 → 清理&nbsp;&nbsp;·&nbsp;&nbsp;<b>零遥测</b>&nbsp;&nbsp;·&nbsp;&nbsp;图片 · PDF · OFFICE · 视频&nbsp;&nbsp;·&nbsp;&nbsp;<b>一次性付费</b>&nbsp;&nbsp;·&nbsp;&nbsp;清理前先查看&nbsp;&nbsp;·&nbsp;&nbsp;<b>没有任何数据离开你的 Mac · 无需账户 · 无需上传</b>&nbsp;&nbsp;·&nbsp;&nbsp;",
+    "marquee": "拖放 → 审查 → 清理&nbsp;&nbsp;·&nbsp;&nbsp;<b>零遥测</b>&nbsp;&nbsp;·&nbsp;&nbsp;图片 · PDF · OFFICE · 视频&nbsp;&nbsp;·&nbsp;&nbsp;<b>一次性付费</b>&nbsp;&nbsp;·&nbsp;&nbsp;清理前先查看&nbsp;&nbsp;·&nbsp;&nbsp;<b>没有任何数据离开你的 Mac · 无需账户 · 无需上传</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 种语言&nbsp;&nbsp;·&nbsp;&nbsp;拖放 → 审查 → 清理&nbsp;&nbsp;·&nbsp;&nbsp;<b>零遥测</b>&nbsp;&nbsp;·&nbsp;&nbsp;图片 · PDF · OFFICE · 视频&nbsp;&nbsp;·&nbsp;&nbsp;<b>一次性付费</b>&nbsp;&nbsp;·&nbsp;&nbsp;清理前先查看&nbsp;&nbsp;·&nbsp;&nbsp;<b>没有任何数据离开你的 Mac · 无需账户 · 无需上传</b>&nbsp;&nbsp;·&nbsp;&nbsp;8 种语言&nbsp;&nbsp;·&nbsp;&nbsp;",
 
     "how.label": "// 工作方式",
     "how.1.title": "拖入<br>你的文件",
