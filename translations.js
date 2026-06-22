@@ -26,6 +26,12 @@ window.I18N = {
 
   /* ===================================================================== EN */
   en: {
+    "news.label": "// What's new",
+    "news.latest": "Latest",
+    "news.012.1": "Scrubd now speaks your language — the whole app is localized into 8 languages, with cleaning reports and previews translated too.",
+    "news.011.1": "A cleaner clean: PDFs, GIFs and Office files (.docx, .xlsx, .pptx) now have every trace of hidden author, company and location data stripped out — while keeping the file fully intact.",
+    "news.011.2": "More robust: if anything goes wrong mid-clean, Scrubd never leaves a half-written or corrupt file behind.",
+    "news.010.1": "Initial release — strip hidden metadata from images, PDFs, Office documents and video in one drag-and-drop.",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 languages",
     "langs.label": "// Speaks your language",
@@ -184,6 +190,12 @@ window.I18N = {
 
   /* ===================================================================== ES */
   es: {
+    "news.label": "// Novedades",
+    "news.latest": "Última",
+    "news.012.1": "Scrubd ahora habla tu idioma: toda la app está traducida a 8 idiomas, incluidos los informes de limpieza y las vistas previas.",
+    "news.011.1": "Una limpieza más a fondo: en PDF, GIF y archivos de Office (.docx, .xlsx, .pptx) se elimina todo rastro de autor, empresa y ubicación ocultos, manteniendo el archivo intacto.",
+    "news.011.2": "Más robusto: si algo falla durante la limpieza, Scrubd nunca deja un archivo a medias o dañado.",
+    "news.010.1": "Versión inicial: elimina los metadatos ocultos de imágenes, PDF, documentos de Office y vídeo con un solo arrastrar y soltar.",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 idiomas",
     "langs.label": "// Habla tu idioma",
@@ -342,6 +354,12 @@ window.I18N = {
 
   /* ===================================================================== FR */
   fr: {
+    "news.label": "// Nouveautés",
+    "news.latest": "Récent",
+    "news.012.1": "Scrubd parle désormais votre langue : toute l'app est traduite en 8 langues, rapports de nettoyage et aperçus compris.",
+    "news.011.1": "Un nettoyage plus poussé : les PDF, GIF et fichiers Office (.docx, .xlsx, .pptx) sont débarrassés de toute trace cachée d'auteur, d'entreprise et de localisation, tout en restant intacts.",
+    "news.011.2": "Plus robuste : en cas de problème pendant le nettoyage, Scrubd ne laisse jamais de fichier incomplet ou corrompu.",
+    "news.010.1": "Version initiale : supprimez les métadonnées cachées des images, PDF, documents Office et vidéos d'un simple glisser-déposer.",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 langues",
     "langs.label": "// Parle votre langue",
@@ -500,6 +518,12 @@ window.I18N = {
 
   /* ===================================================================== DE */
   de: {
+    "news.label": "// Neuigkeiten",
+    "news.latest": "Neu",
+    "news.012.1": "Scrubd spricht jetzt deine Sprache – die ganze App ist in 8 Sprachen übersetzt, inklusive Reinigungsberichte und Vorschauen.",
+    "news.011.1": "Gründlicher gereinigt: Bei PDFs, GIFs und Office-Dateien (.docx, .xlsx, .pptx) werden alle versteckten Autor-, Firmen- und Standortdaten restlos entfernt – die Datei bleibt dabei völlig intakt.",
+    "news.011.2": "Robuster: Geht beim Reinigen etwas schief, hinterlässt Scrubd nie eine halb geschriebene oder beschädigte Datei.",
+    "news.010.1": "Erste Version – entfernt versteckte Metadaten aus Bildern, PDFs, Office-Dokumenten und Videos per Drag & Drop.",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 Sprachen",
     "langs.label": "// Spricht deine Sprache",
@@ -658,6 +682,12 @@ window.I18N = {
 
   /* ===================================================================== IT */
   it: {
+    "news.label": "// Novità",
+    "news.latest": "Ultima",
+    "news.012.1": "Scrubd ora parla la tua lingua: tutta l'app è tradotta in 8 lingue, compresi i resoconti di pulizia e le anteprime.",
+    "news.011.1": "Una pulizia più a fondo: da PDF, GIF e file Office (.docx, .xlsx, .pptx) viene rimossa ogni traccia nascosta di autore, azienda e posizione, lasciando il file intatto.",
+    "news.011.2": "Più robusto: se qualcosa va storto durante la pulizia, Scrubd non lascia mai un file incompleto o danneggiato.",
+    "news.010.1": "Versione iniziale: rimuovi i metadati nascosti da immagini, PDF, documenti Office e video con un semplice trascina e rilascia.",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 lingue",
     "langs.label": "// Parla la tua lingua",
@@ -816,6 +846,12 @@ window.I18N = {
 
   /* ===================================================================== PT */
   pt: {
+    "news.label": "// Novidades",
+    "news.latest": "Recente",
+    "news.012.1": "O Scrubd agora fala o seu idioma: toda a app está traduzida para 8 idiomas, incluindo os relatórios de limpeza e as pré-visualizações.",
+    "news.011.1": "Uma limpeza mais completa: em PDF, GIF e ficheiros do Office (.docx, .xlsx, .pptx) é removido todo o vestígio oculto de autor, empresa e localização, mantendo o ficheiro intacto.",
+    "news.011.2": "Mais robusto: se algo falhar durante a limpeza, o Scrubd nunca deixa um ficheiro incompleto ou danificado.",
+    "news.010.1": "Versão inicial: remova os metadados ocultos de imagens, PDF, documentos do Office e vídeo com um simples arrastar e largar.",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 idiomas",
     "langs.label": "// Fala a sua língua",
@@ -974,6 +1010,12 @@ window.I18N = {
 
   /* ===================================================================== JA */
   ja: {
+    "news.label": "// 新着情報",
+    "news.latest": "最新",
+    "news.012.1": "Scrubd があなたの言語に対応しました。アプリ全体が8言語にローカライズされ、クリーニング結果やプレビューも翻訳されています。",
+    "news.011.1": "よりしっかりクリーニング：PDF・GIF・Office ファイル（.docx、.xlsx、.pptx）から、隠れた作成者・会社・位置情報をすべて削除しつつ、ファイルはそのまま保ちます。",
+    "news.011.2": "より堅牢に：クリーニング中に問題が起きても、Scrubd が中途半端な壊れたファイルを残すことはありません。",
+    "news.010.1": "初回リリース — 画像・PDF・Office 文書・動画から、隠れたメタデータをドラッグ＆ドロップひとつで削除します。",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8言語",
     "langs.label": "// あなたの言語で",
@@ -1132,6 +1174,12 @@ window.I18N = {
 
   /* ===================================================================== ZH-HANS */
   "zh-Hans": {
+    "news.label": "// 新功能",
+    "news.latest": "最新",
+    "news.012.1": "Scrubd 现在会说你的语言——整个应用已本地化为 8 种语言，清理报告和预览也一并翻译。",
+    "news.011.1": "清理更彻底：PDF、GIF 以及 Office 文件（.docx、.xlsx、.pptx）中隐藏的作者、公司和位置信息会被全部清除，同时文件保持完好。",
+    "news.011.2": "更稳健：清理过程中即使出错，Scrubd 也绝不会留下只写了一半或损坏的文件。",
+    "news.010.1": "首个版本——只需拖放一次，即可清除图片、PDF、Office 文档和视频中隐藏的元数据。",
     /* idiomas + feedback (multiidioma · v0.1) */
     "hero.langs": "8 种语言",
     "langs.label": "// 说你的语言",
